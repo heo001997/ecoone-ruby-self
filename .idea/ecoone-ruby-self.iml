@@ -59,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, ruby-2.7.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.0, ruby-2.7.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.1, ruby-2.7.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.5.3, ruby-2.7.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.2, ruby-2.7.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.7, ruby-2.7.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v4.3.1, ruby-2.7.0-p0) [gem]" level="application" />

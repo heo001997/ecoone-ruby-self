@@ -48,3 +48,6 @@ gem "trailblazer-rails"
 gem "trailblazer-cells"
 gem "cells-erb"
 gem "cells-rails"
+
+# MySQL
+gem 'mysql2', '~> 0.5.3'

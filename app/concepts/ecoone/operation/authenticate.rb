@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ecoone::Operation::Authentication < BaseOperation
   step :verify_token_present
   step :verify_token
@@ -8,7 +6,7 @@ class Ecoone::Operation::Authentication < BaseOperation
 
   raise :set_unauthenticated, fail_fast: true
 
-  def verify_token_present(_options, request:, **)
+  def verify_token_present(options, request:, **)
     # Fail unless Auth header is set
     return Railway.fail! if request.headers['Authorization'].nil?
 
@@ -38,7 +36,7 @@ class Ecoone::Operation::Authentication < BaseOperation
   end
 
   # Verify that user has a currently active role otherwise unauthenticate
-  def verify_current_user_role(_options, current_user:, **)
+  def verify_current_user_role(options, current_user:, **)
     Rails.logger.info("Authentication of user #{current_user.username} failed because of inactive role")
     return Railway.fail! unless current_user.user_role.active?
 
