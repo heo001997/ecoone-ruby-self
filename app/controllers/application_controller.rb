@@ -1,13 +1,21 @@
 class ApplicationController < ActionController::API
   def index(result, representer)
     params = get_params(result, representer)
+    result = Ecoone::Operation::HandleResult.(params)
 
-    ### Still lack of codes
+    # Render return output to user
+    render(json: result[:model], status: result[:http_status]) # Please care about ":" character
   end
 
-  private
+  def show(result, representer)
+    params = get_params(result, representer)
+    result = Ecoone::Operation::HandleResult.(params)
 
-  def get_params(result, representer)
+    # Render output to user
+    render(json: result[:model], status: result[:http_status])
+  end
+
+  private def get_params(result, representer)
     params = {
         params: result,
         model: result[:model],

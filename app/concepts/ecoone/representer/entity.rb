@@ -17,7 +17,7 @@ class Ecoone::Representer::Entity
     per_page      = @result[:pagination_per_page] || 1
     {
         current_page: page,
-        total_pages: total_page,
+        total_pages: total_pages,
         per_page: per_page,
         data: @model
     }

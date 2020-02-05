@@ -57,3 +57,6 @@ gem 'roar'
 
 # Fix error with new thing of the representable gem, apparently. add
 gem 'multi_json'
+
+# Pagination
+gem 'will_paginate', '~> 3.1.0'
