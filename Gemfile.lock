@@ -56,6 +56,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
+    bcrypt (3.1.13)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
     bootsnap (1.4.5-java)
@@ -116,6 +117,7 @@ GEM
     msgpack (1.3.1-java)
     msgpack (1.3.1-x64-mingw32)
     msgpack (1.3.1-x86-mingw32)
+    multi_json (1.14.1)
     mysql2 (0.5.3)
     nio4r (2.5.2)
     nio4r (2.5.2-java)
@@ -170,6 +172,8 @@ GEM
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
+    roar (1.1.0)
+      representable (~> 3.0.0)
     ruby_dep (1.5.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
@@ -236,14 +240,17 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug
   cells-erb
   cells-rails
   listen (>= 3.0.5, < 3.2)
+  multi_json
   mysql2 (~> 0.5.3)
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
+  roar
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

@@ -1,6 +1,6 @@
 #This representer is used for displaying a single result
-require 'roar/decorator'
-require 'roar/json'
+require "roar/decorator"
+require "roar/json"
 
 class Ecoone::Representer::Entity
   attr_reader :model

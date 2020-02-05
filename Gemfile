@@ -14,7 +14,7 @@ gem 'puma', '~> 4.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -51,3 +51,9 @@ gem "cells-rails"
 
 # MySQL
 gem 'mysql2', '~> 0.5.3'
+
+# Roar Resourc-Oriented Architectures in Ruby
+gem 'roar'
+
+# Fix error with new thing of the representable gem, apparently. add
+gem 'multi_json'
