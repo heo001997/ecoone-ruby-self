@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     #end
   #end
 
-  resources :users, only: [:index, :new], param: :user_id
+  resources :users, only: [:index, :new, :create], param: :user_id
   #resources :users, only: [:index], param: :user_id
   #get 'users/:id' => 'users#index'       Equal to above, normal way on tutorial
 end

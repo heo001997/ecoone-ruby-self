@@ -15,6 +15,10 @@ class ApplicationController < ActionController::API
     render(json: result[:model], status: result[:http_status])
   end
 
+  def create(result, representer)
+
+  end
+
   private def get_params(result, representer)
     params = {
         params: result,
