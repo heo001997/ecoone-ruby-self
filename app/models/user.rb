@@ -6,6 +6,10 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  # Added
+  validates :username, :user_id, :password, :presence => true
+  #validates_uniqueness_of :email
+
   # Return if user is admin
   def is_admin?
     # Best string comparing ever :v
