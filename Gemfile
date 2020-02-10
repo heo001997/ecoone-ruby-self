@@ -60,3 +60,9 @@ gem 'multi_json'
 
 # Pagination
 gem 'will_paginate', '~> 3.1.0'
+
+# Reform and Contracts
+gem 'reform'
+gem 'reform-rails'
+gem 'dry-validation'
+gem 'dry-types'

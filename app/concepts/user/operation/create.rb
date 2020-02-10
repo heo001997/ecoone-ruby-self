@@ -1,5 +1,7 @@
 class User::Operation::Create < BaseOperation
-  step Model(User, :create)
-  #step Subprocess ( Ecoone::Operation::FindManyWithPagination )
-  fail Ecoone::Step::ModelNotFound
+  step Model(User, :new)
+  step Contract::Build( constant: User::Contract::Create )
+  step Contract::Validate()
+  step Contract::Persist()
+  #fail Ecoone::Step::ModelNotFound
 end

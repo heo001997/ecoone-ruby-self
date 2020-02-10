@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     result = User::Operation::List.({
         params: params,
@@ -26,6 +27,6 @@ class UsersController < ApplicationController
         id_attribute: :user_id,
         request: request
     })
-    super(result, User::Representer::Short)
+    #super(result, User::Representer::Short)
   end
 end

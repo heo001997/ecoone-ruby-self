@@ -16,11 +16,11 @@ class ApplicationController < ActionController::API
   end
 
   def create(result, representer)
-    params = get_params(result, representer)
-    result = Ecoone::Operation::HandleResult.(params)
-
-    # Render return output to user
-    render(json: result[:model], status: result[:http_status]) # Please care about ":" character
+    #params = get_params(result, representer)
+    #result = Ecoone::Operation::HandleResult.(params)
+    #
+    ## Render output to user
+    #render(json: result[:model], status: result[:http_status])
   end
 
   private def get_params(result, representer)
